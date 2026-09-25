@@ -39,6 +39,15 @@ An AVL tree implementation supporting standard operations alongside advanced fea
 *   **`get_root()`**: 
     *   Returns a pointer to the tree's root node.
     *   O(1) worst-case.
+ 
+### Usage
+```python
+tree = AVLTree()
+tree.insert(10, "value")
+tree.insert(5, "another value")
+node, edges = tree.search(10)
+print(tree.avl_to_array())  # [(5, 'another value'), (10, 'value')]
+```
 
 ## 2. Fibonacci Heap (Java)
 A Fibonacci Heap implementation featuring efficiently structured amortized operations. Every node contains a natural number key and a string for information. The logic adheres strictly to asymptotic time bounds in terms of n, evaluating both worst-case and amortized scenarios. The structure is implemented using Java 21.
@@ -74,3 +83,10 @@ A Fibonacci Heap implementation featuring efficiently structured amortized opera
 *   **`numTrees()`**: 
     *   Returns the number of trees currently in the heap.
     *   O(1) amortized / O(1) worst-case.
+### Usage
+```java
+FibonacciHeap heap = new FibonacciHeap();
+FibonacciHeap.HeapNode node = heap.insert(10, "value");
+heap.insert(5, "another value");
+System.out.println(heap.findMin().key); // 5
+```
