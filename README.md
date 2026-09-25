@@ -1,2 +1,2 @@
 # Data-Structures
-A repository that consists of AVL Trees implementation in Python and Fibbonaci heaps in Java
+A collection of advanced data structures featuring AVL Trees (Python) and Fibonacci Heaps (Java).
